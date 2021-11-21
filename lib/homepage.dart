@@ -36,7 +36,7 @@ class _HomepageState extends State<Homepage> {
           },
           items: [Icon(Icons.people),
             Icon(Icons.home),
-            Icon(Icons.add),
+            Icon(Icons.favorite,),
       ]),
       body: pages[
       _currentIndex
