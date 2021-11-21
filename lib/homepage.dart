@@ -4,6 +4,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:myapp17/pages/page%201.dart';
 import 'package:myapp17/pages/page%203.dart';
 import 'package:myapp17/pages/page%204.dart';
+import 'package:myapp17/pages/page5.dart';
 import 'package:myapp17/pages/pages%202.dart';
 
 class Homepage extends StatefulWidget {
@@ -16,7 +17,7 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   var _currentIndex=0;
   final pages=[
-  page1(), page2(), page4(),
+  page1(), page2(), page3(), page4(),page5(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -36,7 +37,9 @@ class _HomepageState extends State<Homepage> {
           },
           items: [Icon(Icons.people),
             Icon(Icons.home),
-            Icon(Icons.favorite,),
+            Icon(Icons.favorite),
+            Icon(Icons.settings),
+            Icon(Icons.camera),
       ]),
       body: pages[
       _currentIndex
